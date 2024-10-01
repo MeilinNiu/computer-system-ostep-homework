@@ -15,6 +15,8 @@ This program, `lottery.py`, allows you to see how a lottery scheduler works. See
     ```
     ```
     $ python3 lottery.py -s 1 -j 3 -c
+    ```
+    ```
     Here is the job list, with the run time of each job: 
   Job 0 ( length = 1, tickets = 84 )
   Job 1 ( length = 7, tickets = 25 )
@@ -104,8 +106,9 @@ Random 945271 -> Winning ticket 21 (of 25) -> Run 1
 
     ![Figure 9.2: Lottery Fairness Study](./lottery_fairness.png)
 
+    explore turnaround time, response time.
     ```
-    $ ./stride_graph.py
+    $ python3 stride_graph.py
     ```
 
     ![Stride Scheduling](./stride.png)
