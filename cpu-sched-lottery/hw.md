@@ -16,8 +16,8 @@ This program, `lottery.py`, allows you to see how a lottery scheduler works. See
     ```
     $ python3 lottery.py -s 1 -j 3 -c
     ```
-    ```
-    Here is the job list, with the run time of each job: 
+```
+Here is the job list, with the run time of each job: 
   Job 0 ( length = 1, tickets = 84 )
   Job 1 ( length = 7, tickets = 25 )
   Job 2 ( length = 4, tickets = 44 )
@@ -64,7 +64,7 @@ Random 945271 -> Winning ticket 21 (of 25) -> Run 1
   Jobs:
  (  job:0 timeleft:0 tix:--- )  (* job:1 timeleft:1 tix:25 )  (  job:2 timeleft:0 tix:--- ) 
 --> JOB 1 DONE at time 12
-    ```
+```
 
 2. Now run with two specific jobs: each of length 10, but one (job 0) with just 1 ticket and the other (job 1) with 100 (e.g., `-l 10:1,10:100`). What happens when the number of tickets is so imbalanced? Will job 0 ever run before job 1 completes? How often? In general, what does such a ticket imbalance do to the behavior of lottery scheduling?
 
